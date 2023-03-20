@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  shutdown: graceful
+spring:
+  application:
+    name: bug-demo
+  lifecycle:
+    timeout-per-shutdown-phase: 60s
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: xxx
+    password: xxx
+    listener:
+      simple:
+        acknowledge-mode: manual
